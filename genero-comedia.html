@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoviesGo - Comedia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .carousel-inner .carousel-item > .row { display: flex; }
+    .carousel-item .card { margin: 0 5px; }
+    .horizontal-slider {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+    .horizontal-slider a.btn { margin: 5px; }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MoviesGo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Comedia</a></li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="membership.html">Membresía</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Barra de subcategorías centrada -->
+  <section id="subcat-nav" class="py-3">
+    <div class="container">
+      <div class="horizontal-slider">
+        <a href="#Romanticas" class="btn btn-lg btn-outline-light">Romántica</a>
+        <a href="#Parodias" class="btn btn-lg btn-outline-light">Parodia</a>
+        <a href="#Satiras" class="btn btn-lg btn-outline-light">Sátira</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subcategoría: Romántica -->
+  <section id="Romanticas" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Romanticas</h2>
+      <div id="carouselRomanticas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica1.jpg" class="card-img-top" alt="Romantica 1">
+                    <div class="card-body"><h5 class="card-title">Romantica 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica2.jpg" class="card-img-top" alt="Romantica 2">
+                    <div class="card-body"><h5 class="card-title">Romantica 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica3.jpg" class="card-img-top" alt="Romantica 3">
+                    <div class="card-body"><h5 class="card-title">Romantica 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica4.jpg" class="card-img-top" alt="Romantica 4">
+                    <div class="card-body"><h5 class="card-title">Romantica 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica5.jpg" class="card-img-top" alt="Romantica 5">
+                    <div class="card-body"><h5 class="card-title">Romantica 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica6.jpg" class="card-img-top" alt="Romantica 6">
+                    <div class="card-body"><h5 class="card-title">Romantica 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica7.jpg" class="card-img-top" alt="Romantica 7">
+                    <div class="card-body"><h5 class="card-title">Romantica 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica8.jpg" class="card-img-top" alt="Romantica 8">
+                    <div class="card-body"><h5 class="card-title">Romantica 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica9.jpg" class="card-img-top" alt="Romantica 9">
+                    <div class="card-body"><h5 class="card-title">Romantica 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Romantica10.jpg" class="card-img-top" alt="Romantica 10">
+                    <div class="card-body"><h5 class="card-title">Romantica 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRomanticas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRomanticas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Subcategoría: Parodia -->
+  <section id="Parodias" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Parodias</h2>
+      <div id="carouselParodias" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia1.jpg" class="card-img-top" alt="Parodia 1">
+                    <div class="card-body"><h5 class="card-title">Parodia 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia2.jpg" class="card-img-top" alt="Parodia 2">
+                    <div class="card-body"><h5 class="card-title">Parodia 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia3.jpg" class="card-img-top" alt="Parodia 3">
+                    <div class="card-body"><h5 class="card-title">Parodia 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia4.jpg" class="card-img-top" alt="Parodia 4">
+                    <div class="card-body"><h5 class="card-title">Parodia 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia5.jpg" class="card-img-top" alt="Parodia 5">
+                    <div class="card-body"><h5 class="card-title">Parodia 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia6.jpg" class="card-img-top" alt="Parodia 6">
+                    <div class="card-body"><h5 class="card-title">Parodia 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia7.jpg" class="card-img-top" alt="Parodia 7">
+                    <div class="card-body"><h5 class="card-title">Parodia 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia8.jpg" class="card-img-top" alt="Parodia 8">
+                    <div class="card-body"><h5 class="card-title">Parodia 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia9.jpg" class="card-img-top" alt="Parodia 9">
+                    <div class="card-body"><h5 class="card-title">Parodia 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Parodia10.jpg" class="card-img-top" alt="Parodia 10">
+                    <div class="card-body"><h5 class="card-title">Parodia 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselParodias" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselParodias" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Subcategoría: Sátira -->
+  <section id="Satiras" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Satiras</h2>
+      <div id="carouselSatiras" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira1.jpg" class="card-img-top" alt="Satira 1">
+                    <div class="card-body"><h5 class="card-title">Satira 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira2.jpg" class="card-img-top" alt="Satira 2">
+                    <div class="card-body"><h5 class="card-title">Satira 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira3.jpg" class="card-img-top" alt="Satira 3">
+                    <div class="card-body"><h5 class="card-title">Satira 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira4.jpg" class="card-img-top" alt="Satira 4">
+                    <div class="card-body"><h5 class="card-title">Satira 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira5.jpg" class="card-img-top" alt="Satira 5">
+                    <div class="card-body"><h5 class="card-title">Satira 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira6.jpg" class="card-img-top" alt="Satira 6">
+                    <div class="card-body"><h5 class="card-title">Satira 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira7.jpg" class="card-img-top" alt="Satira 7">
+                    <div class="card-body"><h5 class="card-title">Satira 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira8.jpg" class="card-img-top" alt="Satira 8">
+                    <div class="card-body"><h5 class="card-title">Satira 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira9.jpg" class="card-img-top" alt="Satira 9">
+                    <div class="card-body"><h5 class="card-title">Satira 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Satira10.jpg" class="card-img-top" alt="Satira 10">
+                    <div class="card-body"><h5 class="card-title">Satira 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSatiras" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSatiras" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Footer -->
+  <footer class="bg-black py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="https://facebook.com" class="text-light me-2" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://twitter.com" class="text-light me-2" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://instagram.com" class="text-light me-2" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 MoviesGo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+  const token = localStorage.getItem('token') // Obtener token del login
+
+  async function loadMovies(category, elementId) {
+    try {
+      const response = await fetch(`http://localhost:5000/api/movies?category=${category}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`, 
+          'Content-Type': 'application/json'
+        }
+      })
+
+      if (!response.ok) throw new Error('Error al cargar películas')
+      const { data: movies } = await response.json()
+
+      const carousel = document.getElementById(elementId)
+      carousel.innerHTML = movies.map(movie => `
+        <div class="col-md-2">
+          <div class="card bg-secondary text-light">
+            <img src="${movie.imageUrl}" class="card-img-top" alt="${movie.title}">
+            <div class="card-body">
+              <h5>${movie.title}</h5>
+              <p>${movie.year} • ${movie.genre}</p> <!-- Campos adicionales -->
+            </div>
+          </div>
+        </div>
+      `).join('')
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Debes iniciar sesión para ver las películas')
+      window.location.href = 'membership.html'
+    }
+  }
+
+    // Llamar la función para cada subcategoría
+    loadMovies('romanticas', 'carouselRomaticas')
+    loadMovies('parodias', 'carouselParodias')
+    loadMovies('satiras', 'carouselSatiras')
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

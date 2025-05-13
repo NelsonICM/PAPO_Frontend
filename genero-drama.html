@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoviesGo - Drama</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .carousel-inner .carousel-item > .row { display: flex; }
+    .carousel-item .card { margin: 0 5px; }
+    .horizontal-slider {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+    .horizontal-slider a.btn { margin: 5px; }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MoviesGo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Drama</a></li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="membership.html">Membresía</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Barra de subcategorías centrada -->
+  <section id="subcat-nav" class="py-3">
+    <div class="container">
+      <div class="horizontal-slider">
+        <a href="#Historicos" class="btn btn-lg btn-outline-light">Histórico</a>
+        <a href="#Biograficos" class="btn btn-lg btn-outline-light">Biográfico</a>
+        <a href="#Contemporaneos" class="btn btn-lg btn-outline-light">Contemporáneo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subcategoría: Histórico -->
+  <section id="Historicos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Historicos</h2>
+      <div id="carouselHistoricos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico1.jpg" class="card-img-top" alt="Historico 1">
+                    <div class="card-body"><h5 class="card-title">Historico 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico2.jpg" class="card-img-top" alt="Historico 2">
+                    <div class="card-body"><h5 class="card-title">Historico 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico3.jpg" class="card-img-top" alt="Historico 3">
+                    <div class="card-body"><h5 class="card-title">Historico 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico4.jpg" class="card-img-top" alt="Historico 4">
+                    <div class="card-body"><h5 class="card-title">Historico 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico5.jpg" class="card-img-top" alt="Historico 5">
+                    <div class="card-body"><h5 class="card-title">Historico 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico6.jpg" class="card-img-top" alt="Historico 6">
+                    <div class="card-body"><h5 class="card-title">Historico 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico7.jpg" class="card-img-top" alt="Historico 7">
+                    <div class="card-body"><h5 class="card-title">Historico 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico8.jpg" class="card-img-top" alt="Historico 8">
+                    <div class="card-body"><h5 class="card-title">Historico 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico9.jpg" class="card-img-top" alt="Historico 9">
+                    <div class="card-body"><h5 class="card-title">Historico 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Historico10.jpg" class="card-img-top" alt="Historico 10">
+                    <div class="card-body"><h5 class="card-title">Historico 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHistoricos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHistoricos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Subcategoría: Biográfico -->
+  <section id="Biograficos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Biograficos</h2>
+      <div id="carouselBiograficos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico1.jpg" class="card-img-top" alt="Biografico 1">
+                    <div class="card-body"><h5 class="card-title">Biografico 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico2.jpg" class="card-img-top" alt="Biografico 2">
+                    <div class="card-body"><h5 class="card-title">Biografico 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico3.jpg" class="card-img-top" alt="Biografico 3">
+                    <div class="card-body"><h5 class="card-title">Biografico 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico4.jpg" class="card-img-top" alt="Biografico 4">
+                    <div class="card-body"><h5 class="card-title">Biografico 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico5.jpg" class="card-img-top" alt="Biografico 5">
+                    <div class="card-body"><h5 class="card-title">Biografico 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico6.jpg" class="card-img-top" alt="Biografico 6">
+                    <div class="card-body"><h5 class="card-title">Biografico 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico7.jpg" class="card-img-top" alt="Biografico 7">
+                    <div class="card-body"><h5 class="card-title">Biografico 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico8.jpg" class="card-img-top" alt="Biografico 8">
+                    <div class="card-body"><h5 class="card-title">Biografico 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico9.jpg" class="card-img-top" alt="Biografico 9">
+                    <div class="card-body"><h5 class="card-title">Biografico 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Biografico10.jpg" class="card-img-top" alt="Biografico 10">
+                    <div class="card-body"><h5 class="card-title">Biografico 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiograficos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBiograficos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Subcategoría: Contemporáneo -->
+  <section id="Contemporaneos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contemporaneos</h2>
+      <div id="carouselContemporaneos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo1.jpg" class="card-img-top" alt="Contemporaneo 1">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo2.jpg" class="card-img-top" alt="Contemporaneo 2">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo3.jpg" class="card-img-top" alt="Contemporaneo 3">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo4.jpg" class="card-img-top" alt="Contemporaneo 4">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo5.jpg" class="card-img-top" alt="Contemporaneo 5">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo6.jpg" class="card-img-top" alt="Contemporaneo 6">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo7.jpg" class="card-img-top" alt="Contemporaneo 7">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo8.jpg" class="card-img-top" alt="Contemporaneo 8">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo9.jpg" class="card-img-top" alt="Contemporaneo 9">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Contemporaneo10.jpg" class="card-img-top" alt="Contemporaneo 10">
+                    <div class="card-body"><h5 class="card-title">Contemporaneo 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselContemporaneos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselContemporaneos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Footer -->
+  <footer class="bg-black py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="https://facebook.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://twitter.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://instagram.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 MoviesGo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+  const token = localStorage.getItem('token') // Obtener token del login
+
+  async function loadMovies(category, elementId) {
+    try {
+      const response = await fetch(`http://localhost:5000/api/movies?category=${category}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`, 
+          'Content-Type': 'application/json'
+        }
+      })
+
+      if (!response.ok) throw new Error('Error al cargar películas')
+      const { data: movies } = await response.json()
+
+      const carousel = document.getElementById(elementId)
+      carousel.innerHTML = movies.map(movie => `
+        <div class="col-md-2">
+          <div class="card bg-secondary text-light">
+            <img src="${movie.imageUrl}" class="card-img-top" alt="${movie.title}">
+            <div class="card-body">
+              <h5>${movie.title}</h5>
+              <p>${movie.year} • ${movie.genre}</p> <!-- Campos adicionales -->
+            </div>
+          </div>
+        </div>
+      `).join('')
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Debes iniciar sesión para ver las películas')
+      window.location.href = 'membership.html'
+    }
+  }
+
+    // Llamar la función para cada subcategoría
+    loadMovies('historicos', 'carouselHistoricos')
+    loadMovies('biograficos', 'carouselBiograficos')
+    loadMovies('contemporaneos', 'carouselContemporaneos')
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

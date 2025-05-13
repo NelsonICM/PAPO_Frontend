@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Header y Navbar */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .navbar-dark .nav-link {
+    font-size: 1rem;
+  }
+  
+  /* Slider / Hero */
+  .carousel-caption h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  .carousel-caption p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  }
+  
+  .slider-horizontal::-webkit-scrollbar {
+    height: 8px;
+  }
+  .slider-horizontal::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Tarjetas dentro del slider */
+  .slider-card, .subcat-card {
+    min-width: 200px;
+    flex: 0 0 auto;
+    border: none;
+  }
+  .slider-card img {
+    height: 120px;
+    object-fit: cover;
+  }
+  .subcat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Secciones */
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bg-black {
+    background-color: #000;
+  }
+  .bg-secondary {
+    background-color: #2a2a2a !important;
+  }
+  
+  /* Formularios */
+  form.bg-secondary {
+    background: #2a2a2a;
+  }
+  
+  /* Footer */
+  footer a {
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #ff0000;
+  }
+  
+  .card {
+    min-width: 200px; /* Ancho mínimo */
+    margin: 10px; /* Espaciado entre tarjetas */
+    flex-shrink: 0; /* Evita que se encojan */
+  }
+
+  .carousel-inner {
+    overflow: visible; /* Permite que las tarjetas se muestren fuera del contenedor */
+  }
+
+  .row.flex-nowrap {
+    gap: 15px; /* Espacio entre tarjetas */
+  }
+ 

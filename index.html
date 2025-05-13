@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoviesGo - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Slider multi-item manual */
+    .carousel-inner .carousel-item > .row {
+      display: flex;
+    }
+    .carousel-item .card {
+      margin: 0 5px;
+    }
+    /* Botones horizontales centrados para Géneros */
+    .horizontal-slider {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+    .horizontal-slider a.btn {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MoviesGo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <!-- En el index se muestran las secciones generales -->
+            <li class="nav-item"><a class="nav-link" href="#estrenos">Estrenos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Destacadas">Destacadas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Series">Series</a></li>
+          </ul>
+          <!-- Barra de búsqueda -->
+          <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <!-- Enlaces a páginas separadas -->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="membership.html">Membresía</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="carousel slide" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background: url('img/hero1.jpg') center/cover no-repeat; height: 80vh;">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-3">Bienvenido a MoviesGo</h1>
+          <p class="lead">Descubre las mejores películas y series en un solo lugar.</p>
+          <a href="#Destacadas" class="btn btn-primary btn-lg">Ver Destacadas</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: url('img/hero2.jpg') center/cover no-repeat; height: 80vh;">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-3">Explora Destacadas</h1>
+          <p class="lead">Los mejores estrenos seleccionados para ti.</p>
+          <a href="#estrenos" class="btn btn-primary btn-lg">Ver Estrenos</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </section>
+
+<section id="extra-categorias" class="py-4">
+    <div class="container text-center">
+      <div class="horizontal-slider">
+        <!-- Categorías existentes -->
+        <a href="#estrenos" class="btn btn-lg btn-outline-light">Estrenos</a>
+        <a href="#Destacadas" class="btn btn-lg btn-outline-light">Destacadas</a>
+        <a href="#Series" class="btn btn-lg btn-outline-light">Series</a>
+        <a href="genero-accion.html" class="btn btn-lg btn-outline-light">Acción</a>
+        <a href="genero-comedia.html" class="btn btn-lg btn-outline-light">Comedia</a>
+        <a href="genero-drama.html" class="btn btn-lg btn-outline-light">Drama</a>
+      </div>
+    </div>
+  </section>  
+
+<!-- Sección Estrenos: Slider con 10 tarjetas por slide -->
+<section id="estrenos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Estrenos</h2>
+      <div id="carouselEstrenos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno1.jpg" class="card-img-top" alt="Estreno 1">
+                    <div class="card-body"><h5 class="card-title">Estreno 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno2.jpg" class="card-img-top" alt="Estreno 2">
+                    <div class="card-body"><h5 class="card-title">Estreno 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno3.jpg" class="card-img-top" alt="Estreno 3">
+                    <div class="card-body"><h5 class="card-title">Estreno 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno4.jpg" class="card-img-top" alt="Estreno 4">
+                    <div class="card-body"><h5 class="card-title">Estreno 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno5.jpg" class="card-img-top" alt="Estreno 5">
+                    <div class="card-body"><h5 class="card-title">Estreno 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno6.jpg" class="card-img-top" alt="Estreno 6">
+                    <div class="card-body"><h5 class="card-title">Estreno 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno7.jpg" class="card-img-top" alt="Estreno 7">
+                    <div class="card-body"><h5 class="card-title">Estreno 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno8.jpg" class="card-img-top" alt="Estreno 8">
+                    <div class="card-body"><h5 class="card-title">Estreno 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno9.jpg" class="card-img-top" alt="Estreno 9">
+                    <div class="card-body"><h5 class="card-title">Estreno 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/estreno10.jpg" class="card-img-top" alt="Estreno 10">
+                    <div class="card-body"><h5 class="card-title">Estreno 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  
+
+  <section id="Destacadas" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Destacadas</h2>
+      <div id="carouselDestacadas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada1.jpg" class="card-img-top" alt="Destacada 1">
+                    <div class="card-body"><h5 class="card-title">Destacada 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada2.jpg" class="card-img-top" alt="Destacada 2">
+                    <div class="card-body"><h5 class="card-title">Destacada 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada3.jpg" class="card-img-top" alt="Destacada 3">
+                    <div class="card-body"><h5 class="card-title">Destacada 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada4.jpg" class="card-img-top" alt="Destacada 4">
+                    <div class="card-body"><h5 class="card-title">Destacada 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada5.jpg" class="card-img-top" alt="Destacada 5">
+                    <div class="card-body"><h5 class="card-title">Destacada 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada6.jpg" class="card-img-top" alt="Destacada 6">
+                    <div class="card-body"><h5 class="card-title">Destacada 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada7.jpg" class="card-img-top" alt="Destacada 7">
+                    <div class="card-body"><h5 class="card-title">Destacada 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada8.jpg" class="card-img-top" alt="Destacada 8">
+                    <div class="card-body"><h5 class="card-title">Destacada 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada9.jpg" class="card-img-top" alt="Destacada 9">
+                    <div class="card-body"><h5 class="card-title">Destacada 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Destacada10.jpg" class="card-img-top" alt="Destacada 10">
+                    <div class="card-body"><h5 class="card-title">Destacada 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacadas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacadas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+
+ <!-- Sección Series: Slider con 10 tarjetas por slide -->
+<section id="Series" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Series</h2>
+      <div id="carouselSeries" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie1.jpg" class="card-img-top" alt="Serie 1">
+                    <div class="card-body"><h5 class="card-title">Serie 1</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie2.jpg" class="card-img-top" alt="Serie 2">
+                    <div class="card-body"><h5 class="card-title">Serie 2</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie3.jpg" class="card-img-top" alt="Serie 3">
+                    <div class="card-body"><h5 class="card-title">Serie 3</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie4.jpg" class="card-img-top" alt="Serie 4">
+                    <div class="card-body"><h5 class="card-title">Serie 4</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie5.jpg" class="card-img-top" alt="Serie 5">
+                    <div class="card-body"><h5 class="card-title">Serie 5</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="row w-100 flex-nowrap">
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie6.jpg" class="card-img-top" alt="Serie 6">
+                    <div class="card-body"><h5 class="card-title">Serie 6</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie7.jpg" class="card-img-top" alt="Serie 7">
+                    <div class="card-body"><h5 class="card-title">Serie 7</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie8.jpg" class="card-img-top" alt="Serie 8">
+                    <div class="card-body"><h5 class="card-title">Serie 8</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie9.jpg" class="card-img-top" alt="Serie 9">
+                    <div class="card-body"><h5 class="card-title">Serie 9</h5></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card bg-secondary text-light">
+                    <img src="img/Serie10.jpg" class="card-img-top" alt="Serie 10">
+                    <div class="card-body"><h5 class="card-title">Serie 10</h5></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles manuales (flechas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSeries" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSeries" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 bg-secondary">
+  <div class="container">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="contactFormIndex" class="p-4 rounded bg-dark">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="contactNameIndex" placeholder="Nombre" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="contactEmailIndex" placeholder="Correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="contactMessageIndex" rows="3" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+    }
+    .row.flex-nowrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+  
+
+  <!-- Footer -->
+  <footer class="bg-black py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="https://facebook.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://twitter.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://instagram.com" class="text-light me-2" target="_blank">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 MoviesGo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Verificar autenticación al cargar la página
+    const token = localStorage.getItem('token')
+    if (!token) {
+      alert('Debes iniciar sesión para ver el contenido')
+      window.location.href = 'membership.html'
+      return; // Detener ejecución si no hay token
+    }
+
+    // Función optimizada para cargar películas
+    const loadMovies = async (category, elementId) => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/movies?category=${category}`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        })
+
+        if (!response.ok) throw new Error('Error al cargar películas')
+        const { data: movies } = await response.json()
+
+        // Renderizado optimizado
+        const carousel = document.getElementById(elementId)
+        if (!carousel) return // Validación adicional
+        
+        carousel.innerHTML = movies.reduce((html, movie, index) => {
+          return html + `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+              <div class="row flex-nowrap justify-content-center">
+                ${movies.slice(index, index + 5).map(m => `
+                  <div class="col-md-2">
+                    <div class="card bg-secondary text-light">
+                      <img src="${m.imageUrl}" class="card-img-top" alt="${m.title}" onerror="this.src='img/placeholder.jpg'">
+                      <div class="card-body">
+                        <h5>${m.title}</h5>
+                        <p>${m.year} • ${m.genre}</p>
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `
+        }, '<div class="carousel-inner">') + '</div>'
+
+        // Agregar controles si no existen
+        if (!carousel.querySelector('.carousel-control-prev')) {
+          carousel.innerHTML += `
+            <button class="carousel-control-prev" type="button" data-bs-target="#${elementId}" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#${elementId}" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          `
+        }
+
+      } catch (error) {
+        console.error('Error:', error)
+        alert('Error al cargar películas. Intenta recargar la página.')
+      }
+    }
+
+    // Carga inicial
+    document.addEventListener('DOMContentLoaded', () => {
+      if (token) {
+        loadMovies('estrenos', 'carouselEstrenos')
+        loadMovies('destacadas', 'carouselDestacadas')
+        loadMovies('series', 'carouselSeries')
+      }
+    })
+</script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
